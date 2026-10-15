@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Produtos NORD — Conheça nossos cafés especiais em grãos ou moídos, disponíveis nos três perfis de torra artesanal."
+  />
+  <title>Produtos — NORD Café Especial</title>
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html" aria-label="NORD - início">
+        <span class="brand-mark">N</span>
+        <span>NORD</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-menu" class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Home</a>
+        <a href="produtos.html" class="active">Produtos</a>
+        <a href="torras.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CATÁLOGO NORD</p>
+          <h1>Nossos Produtos</h1>
+          <p>
+            Cafés especiais selecionados de pequenos produtores e torrados artesanalmente em pequenos lotes.
+            Conheça as opções preparadas para entrega em grãos ou na moagem da sua preferência.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Produto Torra Clara -->
+          <article class="coffee-card" id="torra-clara">
+            <span class="card-number">PRODUTO 01</span>
+            <h3>Torra Clara</h3>
+            <p>Delicada, aromática e leve. Para quem gosta de perceber cada nuance.</p>
+            <span class="card-tag">Pacote 250g • Suave</span>
+            <div class="card-action">
+              <a class="button button-primary" href="torras.html#torra-clara">Ver perfil de torra</a>
+            </div>
+          </article>
+
+          <!-- Produto Torra Média -->
+          <article class="coffee-card featured" id="torra-media">
+            <span class="card-number">PRODUTO 02</span>
+            <h3>Torra Média</h3>
+            <p>Equilibrada e versátil. Uma escolha fácil para diferentes métodos.</p>
+            <span class="card-tag">Pacote 250g • Equilíbrio</span>
+            <div class="card-action">
+              <a class="button button-light" href="torras.html#torra-media">Ver perfil de torra</a>
+            </div>
+          </article>
+
+          <!-- Produto Torra Intensa -->
+          <article class="coffee-card" id="torra-intensa">
+            <span class="card-number">PRODUTO 03</span>
+            <h3>Torra Intensa</h3>
+            <p>Encorpada e marcante. Para quem prefere presença e final prolongado.</p>
+            <span class="card-tag">Pacote 250g • Intensidade</span>
+            <div class="card-action">
+              <a class="button button-primary" href="torras.html#torra-intensa">Ver perfil de torra</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aviso sobre integração de e-commerce / pedidos -->
+    <section class="contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow eyebrow-light">ENCOMENDAS E ASSINATURAS</p>
+          <h2>Faça seu pedido diretamente com a nossa equipe.</h2>
+        </div>
+        <a class="button button-light" href="mailto:contato@nord.exemplo">
+          Falar com a NORD
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark">N</span>
+          <span>NORD</span>
+        </a>
+        <p>Café especial para experiências simples e bem cuidadas.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="torras.html">Torras</a>
+      </div>
+
+      <p class="copyright">
+        © <span id="current-year"></span> NORD Café Especial.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

@@ -157,6 +157,7 @@ a {
 }
 
 .hero h1,
+.section-heading h1,
 .section-heading h2,
 .story-grid h2,
 .contact-card h2 {
@@ -295,6 +296,7 @@ a {
   margin-bottom: 46px;
 }
 
+.section-heading h1,
 .section-heading h2,
 .story-grid h2,
 .contact-card h2 {
@@ -357,6 +359,50 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.72;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roast-level {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.roast-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  opacity: 0.35;
+}
+
+.roast-dot.filled {
+  background: currentColor;
+  opacity: 0.85;
+}
+
+.coffee-card .card-action {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.coffee-card .card-action .button {
+  width: 100%;
+}
+
+.main-nav a.active {
+  color: var(--text);
+  font-weight: 700;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .story-grid {
@@ -425,6 +471,10 @@ a {
   background: #fff;
 }
 
+.button-light:hover {
+  background: var(--surface-2);
+}
+
 /* Footer -------------------------------------------------- */
 
 .site-footer {
@@ -479,7 +529,7 @@ a {
   }
 
   .cards-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 
   .coffee-card {
@@ -539,6 +589,10 @@ a {
 
   .section {
     padding: 78px 0;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-card {
